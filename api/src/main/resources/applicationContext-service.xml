@@ -667,6 +667,10 @@
 	</bean>
 
 	<!--  ************************ END VALIDATOR CONFIGURATION  ************************  -->
+<!-- Escanear servicios propios en org.openmrs.report -->
+<context:component-scan base-package="org.openmrs.report">
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+</context:component-scan>
 
 	<context:component-scan base-package="org.openmrs">
 		<context:include-filter type="annotation" expression="org.openmrs.annotation.Handler"/>

@@ -23,6 +23,23 @@
 	<name>openmrs-api</name>
 	<description>The api that is re-used across web and modules</description>
 	<dependencies>
+		<!-- PDF/HTML/Template dependencies -->
+		<dependency>
+			<groupId>com.openhtmltopdf</groupId>
+			<artifactId>openhtmltopdf-core</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+		<dependency>
+			<groupId>com.openhtmltopdf</groupId>
+			<artifactId>openhtmltopdf-pdfbox</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+			<version>2.3.32</version>
+		</dependency>
 		<dependency>
 			<groupId>org.openmrs.test</groupId>
 			<artifactId>openmrs-test</artifactId>
